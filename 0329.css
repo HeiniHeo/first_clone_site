@@ -1,0 +1,114 @@
+*{margin: 0; padding:0;}
+
+ul,li{
+    list-style: none;
+}
+
+html{
+    overflow-y: auto;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Nanum Gothic Coding', monospace;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+a{
+    font-family: 'Nanum Gothic Coding', monospace;
+    font-family: 'Noto Sans KR', sans-serif;
+    text-decoration: none;
+}
+
+.center{
+    width: 1200px;
+    margin: 0 auto;
+    height: 100%;
+}
+
+#wrap{
+    width: 100%;
+}
+
+.section{
+    padding: 100px 0;
+}
+
+.section1{
+    height: 925px;
+    box-sizing: border-box;
+}
+
+.section2{
+    height: 900px;
+    box-sizing: border-box;
+    background: #ececec;
+}
+
+.section3{
+    height: 530px;
+    box-sizing: border-box;
+}
+
+.section4{
+    height: 460px;
+    box-sizing: border-box;
+    background: #ececec;
+}
+
+.footer{
+    background: #4d4d4d;
+    height: auto;
+    padding: 40px 0;
+}
+
+.main_h2{
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+    color: #202020;
+    padding-bottom: 20px;
+}
+
+.main_text{
+    font-size: 18px;
+    text-align: center;
+    color: #4d4d4d;
+    padding-bottom: 40px;
+}
+
+.divider{
+    display: inline-block;
+    width: 1px;
+    height: 8px;
+    margin: 0 10px;
+    background: #fff; 
+}
+
+.toTop{
+    width: 35px;
+    height: 35px;
+    background: #4d4d4d;
+    text-align: center;
+    position: sticky;
+    float: right;
+    margin: 700px 50px 0 0;
+    top: 400px;
+    z-index: 999;
+    box-shadow: 2px 2px 2px grey;
+}
+
+.toTop > div{
+    display: block;
+    color: #fff;
+    font-size: 10px;
+    line-height: 20px;
+}
+
+.toTop > div >span{
+    display: block;
+    color: #fff;
+    font-size: 10px;
+    line-height: 0px;
+}

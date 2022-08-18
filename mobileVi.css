@@ -1,0 +1,251 @@
+/*모바일 헤더*/
+.mobile_gnb{
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    visibility: hidden;
+}
+
+.mobile_gnb > ul >li{
+    float: left;
+    margin-left: 15px;
+    transition: all 0.3s;
+}
+
+.mobile_gnb > ul > li > img{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.mobile_menu{
+    background: url('./images/icon_menu.9ebc4ec2.svg') no-repeat;
+    background-position:center;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    cursor: pointer;
+}
+
+.mo_menu_X{
+    background: url('./images/icon_close.92ade58d.svg') no-repeat;
+    background-position:center;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    cursor: pointer;
+}
+
+/*모바일 헤더 메뉴*/
+.mobile_header_menu{
+    width: 100%;
+    height: 0px;
+    overflow: hidden;
+    text-align: left;
+    box-sizing: border-box;
+    position: absolute;
+    z-index: 990;
+    background-color: #ececec;
+    border-top: 1px solid #a39d9d3d;
+}
+
+.mobile_header_hide{
+    display: none;
+}
+
+.mobile_header_show{
+    display: block;
+    animation: slider0 0.5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes slider0 {
+    from{
+        height: 0px;
+    }
+    to{
+        height: auto;
+    }
+}
+
+.mobile_header_menu > div{
+    display: block;
+    height: 50px;
+    padding: 15px;
+    border-bottom: 1px solid #a39d9d3d;
+    box-sizing: border-box;
+    cursor: pointer;
+    color: #4d4d4d;
+    position: relative;
+}
+
+.mobile_header_menu > ul.mobile_sub_menu > li >a{
+    color: #4d4d4d;
+}
+
+.mobile_header_menu > div > img{
+    display: inline-block;
+    vertical-align: middle;
+    width: 15px;
+    height: 15px;
+    float: right;
+}
+
+.mobile_header_menu > div >img:nth-child(2){
+    display: none;
+}
+
+.mobile_header_menu > div >img.morotate{
+    transform: rotate(180deg);
+    transition: transform 0.3s;
+}
+
+.mobile_header_menu > div >img.morotate2{
+    transform: rotate(360deg);
+    transition: transform 0.3s;
+}
+
+.mobile_sub_menu{
+    width: 100%;
+    text-align: left;
+    overflow: hidden;
+    border-bottom: 1px solid #a39d9d3d;
+}
+
+.mobile_sub_menu > li{
+    height: 50px;
+    padding: 15px;
+    box-sizing: border-box;
+
+}
+
+.login_menu{
+    display: none;
+}
+
+.customer_menu{
+    display: none;
+}
+
+
+.mobile_header_menu > ul.login_menu_show{
+    display: block;
+    animation: slideLogin 0.3s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes slideLogin{
+    from{
+        height:0px;
+    }
+    to{
+        height: 100px;
+    }
+}
+
+.mobile_header_menu > ul.login_menu_shut{
+    display: block;
+    animation: slideLoginShut 0.3s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes slideLoginShut{
+    from{
+        height:100px;
+    }
+    to{
+        height: 0px;
+    }
+}
+
+.mobile_header_menu > ul.customer_menu_show{
+    display: block;
+    animation: slideCustomer 0.3s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes slideCustomer{
+    from{
+        height: 0px;
+    }
+    to{
+        height:150px;
+    }
+}
+
+.mobile_header_menu > ul.customer_menu_shut{
+    display: block;
+    animation: slideCustomerShut 0.3s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes slideCustomerShut{
+    from{
+        height: 150px;
+    }
+    to{
+        height: 0px;
+    }
+}
+
+
+/*검색창*/
+
+.mobile_header_search{
+    border-top: 1px solid #a39d9d3d;
+    border-bottom: 1px solid #a39d9d3d;
+    overflow: hidden;
+    height: 70px;
+    width: 100%;
+    padding: 0 32px;
+    box-sizing: border-box;
+    background-color: #fff;
+    position: absolute;
+    z-index: 997;
+    transition: all 0.5s;
+}
+
+.search_header_wrap{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mobile_search_home{
+    border-bottom: 1px solid #4d4d4d;
+}
+
+.mobile_search_home > input{
+    border: none;
+    outline: none;
+}
+
+.mobile_search_home > label >img{
+    display: inline-block;
+    height: 17px;
+    width: 17px;
+    cursor: pointer;
+}
+
+.search_hide{
+    display: none;
+}
+
+.mobile_header_search .search_show{
+    display: block;
+    animation: slider3 0.5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes slider3 {
+    from{
+        height: 0px;
+    }
+    to{
+        height: 70px;
+    }
+}

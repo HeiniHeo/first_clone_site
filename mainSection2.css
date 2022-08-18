@@ -1,0 +1,110 @@
+.re_item{
+    width: 540px;
+    height: 240px;
+    float: left;
+    margin: 30px;
+    border-radius: 15px;
+    border: 10px solid #fff;
+    box-sizing: border-box;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+
+.re_item:hover{
+    transform: scale(1.1);
+    background-color: rgba(255, 255, 255, 0.6);
+    border: 10px solid rgba(232, 235, 238, 0.5);
+}
+
+.item_exp{
+    width: 1000px;
+    height: 500px;
+    border: 5px solid rgba(202, 204, 206, 0.5);
+    box-sizing: border-box;
+    border-radius: 20px;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    display: none;
+    transition: all 0.5s;
+}
+
+.display{
+    z-index: 1;
+    display: block;
+    animation: fadein 0.8s;
+}
+
+@keyframes fadein {
+    from{
+        opacity:0;
+    }
+    to{
+        opacity:1;
+    }
+}
+
+
+.item_wrap{
+    height: 100%;
+    width: 100%;
+    border-radius: 20px;
+    background-color: rgba(0, 1, 1, 0.4);
+    text-align: center;
+    padding: 180px 0;
+    box-sizing: border-box;
+    color: #ededed;
+    line-height: 50px;
+}
+
+.delete{
+    top: 60px;
+    right: 60px;
+    position: absolute;
+}
+
+.delete > img{
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+
+.blur{
+    filter: blur(8px);
+    -webkit-filter: blur(8px);
+}
+
+.item_wrap > h2{
+    font-size: 30px;
+    font-weight: 900;
+}
+
+.item_wrap > h3{
+    font-size: 30px;
+}
+
+.item_wrap > h3 > span{
+    color:#ececec;
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.item_exp > .item_wrap{
+    text-shadow: 4px 2px 2px black;
+}
+
+.re_item1{background:url('./images/trendmicro_logo.png') no-repeat center;}
+.item1_exp{background:url('./images/trendmicro.jpg');}
+
+
+.re_item2{background:url('./images/spiceware_logo.png') no-repeat center;}
+.item2_exp{background:url('./images/spiceware.jpg');}
+
+.re_item3{background:url('./images/dssaferlogo.png') no-repeat center;}
+.item3_exp{background: url('./images/dssafer.jpg');}
+
+.re_item4{background:url('./images/alertnow.png') no-repeat center;}
+.item4_exp{background: url('./images/alert_now.png');}
